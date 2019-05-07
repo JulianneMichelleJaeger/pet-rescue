@@ -1,0 +1,8 @@
+<ListFilter @filter={{action "filterByBreed"}} as |filteredResults|>
+  <ul class="results">
+    {{#each filteredResults as |petUnit|}}
+      <li><PetListing @pet={{petUnit}} /></li>
+    {{/each}}
+  </ul>
+</ListFilter>
+{{outlet}}

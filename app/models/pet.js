@@ -1,0 +1,11 @@
+import DS from 'ember-data';
+
+export default DS.Model.extend({
+    name: DS.attr(),
+    breed: DS.attr(),
+    city: DS.attr(),
+    age: DS.attr(),
+    gender: DS.attr(),
+    image: DS.attr(),
+    description: DS.attr()
+});

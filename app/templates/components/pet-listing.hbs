@@ -1,0 +1,25 @@
+<article class="listing">
+  <a
+    onclick={{action "toggleImageSize"}}
+    class="image {{if this.isWide "wide"}}"
+    role="button"
+  >
+    <img src={{this.pet.image}} alt="">
+    <small>View Larger</small>
+  </a>
+  <div class="details">
+    <h3>{{#link-to "pets.show" pet class=pet.id}}{{this.pet.name}}{{/link-to}}</h3>
+    <div class="detail owner">
+      <span>Breed:</span> {{this.pet.breed}} - {{pet-size this.pet.breed}}
+    </div>
+    <div class="detail location">
+      <span>Location:</span> {{this.pet.city}}
+    </div>
+    <div class="detail type">
+      <span>Age:</span> {{this.pet.age}}
+    </div>
+    <div class="detail bedrooms">
+      <span>Gender:</span> {{this.pet.gender}}
+    </div>
+  </div>
+</article>

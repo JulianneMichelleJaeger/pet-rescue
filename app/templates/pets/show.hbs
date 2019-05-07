@@ -1,0 +1,25 @@
+<div class="jumbo show-listing">
+  <h2 class="title">{{this.model.name}}</h2>
+  <div class="content">
+    <div>
+      <img src={{this.model.image}} class="pet-pic" alt="Picture of {{this.model.name}}">
+    </div>
+    <div class="detail-section">
+      <div class="detail owner">
+        <strong>Breed:</strong> {{this.model.breed}} - {{pet-size this.model.breed}}
+      </div>
+      <div class="detail">
+        <strong>Location:</strong> {{this.model.city}}
+      </div>
+      <div class="detail">
+        <strong>Age:</strong> {{this.model.age}}
+      </div>
+      <div class="detail">
+        <strong>Gender:</strong> {{this.model.gender}}
+      </div>
+      <div class="description">
+        <p>{{this.model.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
